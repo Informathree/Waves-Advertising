@@ -1,0 +1,1301 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
+media_folder: theme/assets/images
+public_folder: /assets/images
+collections:
+  - name: pages
+    label: Pages
+    identifier_field: title
+    extension: md
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    folder: cms/pages
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '{{slug}}.html'
+      - label: Seo
+        name: seo
+        widget: object
+        collapsed: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: No index
+            name: noindex
+            widget: boolean
+            default: false
+            required: false
+          - label: Open Graph Title
+            name: og:title
+            widget: string
+            required: false
+          - label: Open Graph Image
+            name: og:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: Twitter Title
+            name: twitter:title
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Card
+            name: twitter:card
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Site
+            name: twitter:site
+            widget: string
+            required: false
+          - label: Twitter Creator
+            name: twitter:creator
+            widget: string
+            required: false
+          - label: Additional HTML tags
+            name: additional_tags
+            widget: text
+            required: false
+  - label: Theme Settings
+    name: settings
+    identifier_field: title
+    extension: json
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    files:
+      - label: General
+        name: site
+        file: cms/_data/settings/site.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: General
+          - hint: Full domain url (needed for a correct sitemap file)
+            name: domain
+            label: Domain
+            widget: string
+            required: false
+          - name: favicon
+            label: Favicon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: apple_touch_icon
+            label: Apple Touch Icon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: header_additional_content
+            label: Additional Content Header
+            hint: Content here will be placed before </head> tag
+            widget: text
+            required: false
+          - name: footer_additional_content
+            label: Additional Content Footer
+            hint: Content here will be placed before </body> tag
+            widget: text
+            required: false
+          - name: images_optimization
+            label: Images Optimization
+            widget: object
+            collapsed: false
+            fields:
+              - label: Image Formats
+                name: formats
+                widget: select
+                multiple: true
+                options:
+                  - label: Avif
+                    value: avif
+                  - label: Webp
+                    value: webp
+              - label: Image Dimensions
+                name: dimensions
+                widget: select
+                multiple: true
+                options:
+                  - label: '500'
+                    value: 500
+                  - label: '800'
+                    value: 800
+                  - label: '1080'
+                    value: 1080
+                  - label: '1600'
+                    value: 1600
+                  - label: '2000'
+                    value: 2000
+                  - label: '2600'
+                    value: 2600
+      - label: Colors
+        name: colors
+        file: cms/_data/colors.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Colors
+      - label: Texts
+        name: texts
+        file: cms/_data/texts.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Texts
+          - hint: 'Original text: Diensten, key: -3243028'
+            label: Text
+            name: '-3243028'
+            widget: string
+          - hint: 'Original text: Portfolio, key: -45b0dad8'
+            label: Text
+            name: '-45b0dad8'
+            widget: string
+          - hint: 'Original text: Over mij, key: 234c4922'
+            label: Text
+            name: 234c4922
+            widget: string
+          - hint: 'Original text: Contact, key: -64104400'
+            label: Text
+            name: '-64104400'
+            widget: string
+          - hint: 'Original text: Business without, key: 3478e088'
+            label: Text
+            name: '3478e088'
+            widget: string
+          - hint: 'Original text: advertising is like, key: -5230b42f'
+            label: Text
+            name: '-5230b42f'
+            widget: string
+          - hint: 'Original text: winking at someone in the dark, key: 656fbe12'
+            label: Text
+            name: 656fbe12
+            widget: string
+          - hint: "Original text: / SOCIAL\_MEDIA\_MARKETING\_AGENCY, key: 3ce6bf9d"
+            label: Text
+            name: 3ce6bf9d
+            widget: string
+          - hint: "Original text: NEEM\_CONTACT\_OP, key: f92a122"
+            label: Text
+            name: f92a122
+            widget: string
+          - hint: 'Original text: 01, key: 601'
+            label: Text
+            name: '601'
+            widget: string
+          - hint: 'Original text: Doelgericht, key: -39f6bdd8'
+            label: Text
+            name: '-39f6bdd8'
+            widget: string
+          - hint: 'Original text: Jouw wens is mijn doel. , key: 5a71b9c2'
+            label: Text
+            name: 5a71b9c2
+            widget: string
+          - hint: >-
+              Original text: Dit kan gaan om het verhogen van je verkoop
+              cijfers, het vergroten van je naamsbekendheid of het verkrijgen
+              van meer leads. , key: 24edf549
+            label: Text
+            name: 24edf549
+            widget: text
+          - hint: 'Original text: 02, key: 602'
+            label: Text
+            name: '602'
+            widget: string
+          - hint: 'Original text: Transparant, key: -37a09d2'
+            label: Text
+            name: '-37a09d2'
+            widget: string
+          - hint: >-
+              Original text: Je marketing doel wijzigt gedurende onze
+              samenwerking of je wilt graag weten hoe je het goed doet? Geen
+              probleem, samen bespreken we campagnes. We meten en analyseren de
+              uitkomsten en stellen de strategie bij indien nodig., key:
+              4af4717b
+            label: Text
+            name: 4af4717b
+            widget: text
+          - hint: 'Original text: 03, key: 603'
+            label: Text
+            name: '603'
+            widget: string
+          - hint: 'Original text: Kennis van Digitale Tools, key: -1f9d39df'
+            label: Text
+            name: '-1f9d39df'
+            widget: string
+          - hint: >-
+              Original text: Instagram of Facebook gebruiken voor het bereiken
+              van jouw doelgroep. Dan ben je bij mij aan het juiste adres. Met
+              honderden succesvolle campagnes voor verschillende klanten weet ik
+              precies waar en hoe ik jouw doelgroep het beste kan bereiken, key:
+              10b9c9c0
+            label: Text
+            name: 10b9c9c0
+            widget: text
+          - hint: 'Original text: 04, key: 604'
+            label: Text
+            name: '604'
+            widget: string
+          - hint: 'Original text: Meedenkend, key: 517667d0'
+            label: Text
+            name: 517667d0
+            widget: string
+          - hint: "Original text: Heb je zelf nog geen beeld bij marketing en hoe het jouw onderneming kan helpen? Tijdens een (digitaal) kopje koffie vertel ik je graag meer over marketing en hoe we jouw campagne samen het beste kunnen opzetten. \_, key: 7994bf5"
+            label: Text
+            name: 7994bf5
+            widget: text
+          - hint: 'Original text: Connect met mij!, key: 41e3c9ed'
+            label: Text
+            name: 41e3c9ed
+            widget: string
+          - hint: 'Original text: Mijn klanten , key: 741d7a11'
+            label: Text
+            name: 741d7a11
+            widget: string
+          - hint: 'Original text: zijn blij, key: -170cf5c8'
+            label: Text
+            name: '-170cf5c8'
+            widget: string
+          - hint: 'Original text: Ben jij de volgende?, key: -4ee6adb4'
+            label: Text
+            name: '-4ee6adb4'
+            widget: string
+          - hint: >-
+              Original text: In de loop der jaren heb ik veel bedrijven mogen
+              helpen door middel van Social Media Marketing. Mijn klanten zijn
+              altijd tevreden met de effectieve en creatieve manieren waarop ik
+              hun marketingcampagnes heb vormgegeven. , key: -13e5a8f8
+            label: Text
+            name: '-13e5a8f8'
+            widget: text
+          - hint: >-
+              Original text: Of het nu gaat om het opzetten van social
+              media-strategieën of het creëren van aansprekende content, ik werk
+              altijd samen met mijn klanten om doelstellingen te bereiken en hun
+              bedrijf te laten groeien. Mijn klanten waarderen mijn snelle
+              respons en de gedrevenheid die ik heb om hen succes te helpen
+              behalen. , key: 25625353
+            label: Text
+            name: '25625353'
+            widget: text
+          - hint: >-
+              Original text: Ik ben dan ook trots op de positieve resultaten die
+              ik voor mijn klanten heb weten te behalen en ben tegelijkertijd
+              dankbaar dat zij mij de kans hebben geven om hen te helpen., key:
+              -3148b38b
+            label: Text
+            name: '-3148b38b'
+            widget: text
+          - hint: 'Original text: Mijn Portfolio, key: 30c3e108'
+            label: Text
+            name: 30c3e108
+            widget: string
+          - hint: 'Original text: 342, key: c5f1'
+            label: Text
+            name: c5f1
+            widget: string
+          - hint: 'Original text: Kopjes koffie, key: 3b1a834'
+            label: Text
+            name: 3b1a834
+            widget: string
+          - hint: 'Original text: 756, key: d518'
+            label: Text
+            name: d518
+            widget: string
+          - hint: 'Original text: Surf kilometers, key: -526c112b'
+            label: Text
+            name: '-526c112b'
+            widget: string
+          - hint: 'Original text: 419, key: c95c'
+            label: Text
+            name: c95c
+            widget: string
+          - hint: 'Original text: Brainstorm sessies, key: -795c71e8'
+            label: Text
+            name: '-795c71e8'
+            widget: string
+          - hint: 'Original text: 284, key: c2ae'
+            label: Text
+            name: c2ae
+            widget: string
+          - hint: 'Original text: Social Media Ads, key: 7fd86561'
+            label: Text
+            name: 7fd86561
+            widget: string
+          - hint: 'Original text: Wat ik voor jou, key: 729a84f4'
+            label: Text
+            name: 729a84f4
+            widget: string
+          - hint: 'Original text: kan betekenen?, key: 62984c1e'
+            label: Text
+            name: 62984c1e
+            widget: string
+          - hint: 'Original text: Mijn specialiteiten, key: 292f13f5'
+            label: Text
+            name: 292f13f5
+            widget: string
+          - hint: >-
+              Original text: Als marketing agency kan ik jou helpen bij het
+              versterken van je bedrijfsmerk, het verhogen van online
+              zichtbaarheid en het genereren van meer leads en verkoop. Ik kan
+              je voorzien van diensten zoals marketingcampagnes, social media
+              management, zoekmachine optimalisatie en analyse van data om de
+              prestaties van campagnes te meten. Door samen te kijken naar wat
+              jij nodig hebt en deze unieke bedrijfsdoelen in kaart te brengen
+              kan ik een op maat gemaakte aanpak ontwikkelen om deze ook
+              daadwerkelijk te bereiken., key: 2cfb48aa
+            label: Text
+            name: 2cfb48aa
+            widget: text
+          - hint: >-
+              Original text: Kortom, als marketing agency kan ik jou helpen om
+              je online aanwezigheid te versterken, verkoop te verhogen en merk
+              te positioneren op de manier die jij voor ogen ziet!, key:
+              4f4b6b5f
+            label: Text
+            name: 4f4b6b5f
+            widget: text
+          - hint: >-
+              Original text: Ben je klaar om je bedrijf op te schalen , key:
+              418d2cb2
+            label: Text
+            name: 418d2cb2
+            widget: string
+          - hint: >-
+              Original text: Door middel van effectieve Social Media Marketing?,
+              key: -4eed31f4
+            label: Text
+            name: '-4eed31f4'
+            widget: string
+          - hint: 'Original text: Neem contact met me op!, key: 79167b9d'
+            label: Text
+            name: 79167b9d
+            widget: string
+          - hint: 'Original text: Home, key: 2268ff'
+            label: Text
+            name: 2268ff
+            widget: string
+          - hint: 'Original text: Protected Page, key: -11d4bbff'
+            label: Text
+            name: '-11d4bbff'
+            widget: string
+          - hint: 'Original text: Password, key: 4c641ebb'
+            label: Text
+            name: 4c641ebb
+            widget: string
+          - hint: >-
+              Original text: Incorrect password. Please try again., key:
+              -f5c4b5f
+            label: Text
+            name: '-f5c4b5f'
+            widget: string
+          - hint: 'Original text: Page Not Found, key: -40b0787c'
+            label: Text
+            name: '-40b0787c'
+            widget: string
+          - hint: >-
+              Original text: The page you are looking for doesn't exist or has
+              been moved, key: 556d64d8
+            label: Text
+            name: 556d64d8
+            widget: string
+          - hint: 'Original text: Lorem Ipsum, key: -1d1715a5'
+            label: Text
+            name: '-1d1715a5'
+            widget: string
+          - hint: >-
+              Original text:  is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book. It
+              has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum., key: 7ab6035b
+            label: Text
+            name: 7ab6035b
+            widget: text
+          - hint: 'Original text: Instagram, key: 792b2792'
+            label: Text
+            name: 792b2792
+            widget: string
+          - hint: 'Original text: Leuke (commerciële) feitjes:, key: -44e3a616'
+            label: Text
+            name: '-44e3a616'
+            widget: string
+          - hint: >-
+              Original text: -Instagram heeft meer dan 1 miljard actieve
+              maandelijkse gebruikers en meer dan 500 miljoen dagelijks actieve
+              personen, key: -321da5c6
+            label: Text
+            name: '-321da5c6'
+            widget: text
+          - hint: >-
+              Original text: -Instagram is de meest gebruikte social app onder
+              jongeren tussen de 13 en 18 jaar oud, na snapchtat, key: -2544d8cc
+            label: Text
+            name: '-2544d8cc'
+            widget: text
+          - hint: >-
+              Original text: -Instagram is in 2018 begonnen met verkoop
+              functionaliteit waardoor berdrijven direct kunnen verkopen via
+              instagram zonder dat een consument naar een andere website dient
+              te gaan. , key: 440697c
+            label: Text
+            name: 440697c
+            widget: text
+          - hint: 'Original text: ‍, key: 200d'
+            label: Text
+            name: 200d
+            widget: string
+          - hint: >-
+              Original text: Wat ik hiermee voor jou kan betekenen? Scroll
+              vooral verder!, key: 21b846b6
+            label: Text
+            name: 21b846b6
+            widget: string
+          - hint: 'Original text: Facebook, key: 217bfee6'
+            label: Text
+            name: 217bfee6
+            widget: string
+          - hint: >-
+              Original text: -Facebook heeft meer dan 2,8 miljard actieve
+              maandelijkse gebruikers, key: 20bba66c
+            label: Text
+            name: 20bba66c
+            widget: string
+          - hint: >-
+              Original text: -Facebook staat bekend om de gebruikersgegevens de
+              mogelijkheden die het biedt om hiervan gebruik te maken voor
+              gerichte advertenties. Wil jij selecteren op basis van interesses,
+              demografie, gedrag en locatie van de gebruiker. Het is allemaal
+              mogelijk!, key: -25cc40b9
+            label: Text
+            name: '-25cc40b9'
+            widget: text
+          - hint: 'Original text: Advertising via, key: -df54f0e'
+            label: Text
+            name: '-df54f0e'
+            widget: string
+          - hint: >-
+              Original text: Door middel van doelgerichte adds precies de
+              doelgroep bereiken die jij voor ogen hebt en daardoor een hoge ROI
+              halen op campagnes?, key: 6d360d1d
+            label: Text
+            name: 6d360d1d
+            widget: text
+          - hint: 'Original text: Gerichte Adds, key: -201c7bb9'
+            label: Text
+            name: '-201c7bb9'
+            widget: string
+          - hint: 'Original text: Een groot bereik, key: 1533c6c1'
+            label: Text
+            name: 1533c6c1
+            widget: string
+          - hint: 'Original text: Meetbaarheid van campagnes , key: 3c8b7559'
+            label: Text
+            name: 3c8b7559
+            widget: string
+          - hint: 'Original text: & meer, key: 42ce2bff'
+            label: Text
+            name: 42ce2bff
+            widget: string
+          - hint: >-
+              Original text: Weten wat wij samen kunnen bereiken door Adds te
+              draaien via Facebook voor jouw onderneming?, key: -6d8123d8
+            label: Text
+            name: '-6d8123d8'
+            widget: text
+          - hint: 'Original text: Neem contact op, key: -7d64541e'
+            label: Text
+            name: '-7d64541e'
+            widget: string
+          - hint: 'Original text: instagram, key: 1b907b2'
+            label: Text
+            name: 1b907b2
+            widget: string
+          - hint: >-
+              Original text: Net als Facebook een groot bereik maar wil je meer
+              gebruik maken van visuals om jouw product of diensten te
+              showcasen. Dan is instagram het platform voor jou!, key: 3775d9e3
+            label: Text
+            name: 3775d9e3
+            widget: text
+          - hint: 'Original text: Engagement, key: 198e345f'
+            label: Text
+            name: 198e345f
+            widget: string
+          - hint: 'Original text: Advertising, key: -176680fc'
+            label: Text
+            name: '-176680fc'
+            widget: string
+          - hint: 'Original text: Visueel, key: 7f100737'
+            label: Text
+            name: 7f100737
+            widget: string
+          - hint: >-
+              Original text: Weten wat wij samen kunnen bereiken door Ads te
+              draaien via Instagram voor jouw onderneming?, key: -65ce5608
+            label: Text
+            name: '-65ce5608'
+            widget: text
+          - hint: 'Original text: Marketing, key: 3fc9ea06'
+            label: Text
+            name: 3fc9ea06
+            widget: string
+          - hint: 'Original text: Campagnes, key: 74e871b5'
+            label: Text
+            name: 74e871b5
+            widget: string
+          - hint: >-
+              Original text: Een kleine greep uit alle mooie campagnes die ik
+              heb mogen draaien voor mijn klanten. , key: -98da2b1
+            label: Text
+            name: '-98da2b1'
+            widget: string
+          - hint: "Original text: PORTFOLIO\_TITLE, key: -262bdb40"
+            label: Text
+            name: '-262bdb40'
+            widget: string
+          - hint: 'Original text: Branding, Web Design, key: -44485ca7'
+            label: Text
+            name: '-44485ca7'
+            widget: string
+          - hint: 'Original text: Mijn klanten zijn blij, key: -1c0acb9'
+            label: Text
+            name: '-1c0acb9'
+            widget: string
+          - hint: >-
+              Original text: Maar je hoeft me niet op mijn blauwe ogen te
+              geloven, key: 1cf43667
+            label: Text
+            name: 1cf43667
+            widget: string
+          - hint: 'Original text: Klasse Student, key: -3c58e800'
+            label: Text
+            name: '-3c58e800'
+            widget: string
+          - hint: "Original text: 'Met Geertina aan boord hebben we ons bedrijf ook online weten te versterken. Ze weet onze vraag, onze stijl en de sfeer die we willen uitdragen erg goed om te zetten in pakkende content en opvallende advertenties. Haar aanstekelijke enthousiasme en vrolijkheid maakt iedere meeting een feestje. Geertina is het type dat altijd een stap extra zet voor ons als klant, actief meedenkt en met eigen creatieve oplossingen\_komt., key: -16115930"
+            label: Text
+            name: '-16115930'
+            widget: text
+          - hint: 'Original text: Anna, key: 1f36c0'
+            label: Text
+            name: 1f36c0
+            widget: string
+          - hint: 'Original text: Greensales, key: 63bb4009'
+            label: Text
+            name: 63bb4009
+            widget: string
+          - hint: >-
+              Original text: "Omdat wij een frisse wind nodig hadden voor onze
+              social media kanalen, hebben wij Geertina van Waves Advertising
+              benaderd. , key: -209232dc
+            label: Text
+            name: '-209232dc'
+            widget: text
+          - hint: >-
+              Original text: Wij zijn erg blij dat we haar hebben gevraagd, ze
+              heeft enorm veel kennis! Ze heeft ons erg goed geholpen met
+              Facebook en Instagram Advertenties., key: -5bfd660a
+            label: Text
+            name: '-5bfd660a'
+            widget: text
+          - hint: 'Original text: Henk, key: 22439a'
+            label: Text
+            name: 22439a
+            widget: string
+          - hint: 'Original text: Real Sisters, key: 2e56ae4d'
+            label: Text
+            name: 2e56ae4d
+            widget: string
+          - hint: >-
+              Original text: “Geertina van Waves Advertising heeft ons geholpen
+              om in twee weken tijd te laten zien wat voor resultaten wij kunnen
+              realiseren voor ons bedrijf, dit d.m.v. Social Media advertenties.
+              Wij zijn erg blij met deze succesvolle resultaten en het bereik
+              naar onze website. Verder een fijne communicatie, presentatie en
+              nazorg!”, key: -66fffd1f
+            label: Text
+            name: '-66fffd1f'
+            widget: text
+          - hint: 'Original text: Sophie, key: -6c0d1670'
+            label: Text
+            name: '-6c0d1670'
+            widget: string
+          - hint: 'Original text: Kopje koffie drinken?, key: -db73c7b'
+            label: Text
+            name: '-db73c7b'
+            widget: string
+          - hint: 'Original text: Neem contact met me op, key: 1cae2504'
+            label: Text
+            name: 1cae2504
+            widget: string
+          - hint: 'Original text: Naam, key: 24ed3f'
+            label: Text
+            name: 24ed3f
+            widget: string
+          - hint: 'Original text: Email adres, key: 7b74f7f9'
+            label: Text
+            name: 7b74f7f9
+            widget: string
+          - hint: 'Original text: Je bericht, key: b53f2f0'
+            label: Text
+            name: b53f2f0
+            widget: string
+          - hint: 'Original text: Je maandelijkse marketing budget, key: 7f7f8f08'
+            label: Text
+            name: 7f7f8f08
+            widget: string
+          - hint: 'Original text: €500 - €1.000, key: 1c8e2e91'
+            label: Text
+            name: 1c8e2e91
+            widget: string
+          - hint: 'Original text: €1.000 - €1.500, key: 38efce18'
+            label: Text
+            name: 38efce18
+            widget: string
+          - hint: 'Original text: €1.500 + , key: -13817e97'
+            label: Text
+            name: '-13817e97'
+            widget: string
+          - hint: 'Original text: Facebook Ads, key: -bfa57aa'
+            label: Text
+            name: '-bfa57aa'
+            widget: string
+          - hint: 'Original text: Instagram Ads, key: 19589b02'
+            label: Text
+            name: 19589b02
+            widget: string
+          - hint: 'Original text: Beide, key: 3d18f67'
+            label: Text
+            name: 3d18f67
+            widget: string
+          - hint: >-
+              Original text: Thank you! Your submission has been received!, key:
+              5a0ea5a1
+            label: Text
+            name: 5a0ea5a1
+            widget: string
+          - hint: >-
+              Original text: Oops! Something went wrong while submitting the
+              form :(, key: 437fe647
+            label: Text
+            name: 437fe647
+            widget: string
+          - hint: >-
+              Original text: Digitale marketing voor jouw bedrijf, key:
+              -47f72b2e
+            label: Text
+            name: '-47f72b2e'
+            widget: string
+          - hint: >-
+              Original text: Ervaring met draaien van marketingcampagnes , key:
+              -1e82e24
+            label: Text
+            name: '-1e82e24'
+            widget: string
+          - hint: 'Original text: voor meerdere bedrijven. , key: 472cfdbc'
+            label: Text
+            name: 472cfdbc
+            widget: string
+          - hint: 'Original text: Meer weten?, key: 58a6cfab'
+            label: Text
+            name: 58a6cfab
+            widget: string
+      - label: Links
+        name: links
+        file: cms/_data/links.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Links
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
+          - hint: 'Original link: /diensten, key: 3191cce7'
+            label: Link
+            name: 3191cce7
+            widget: string
+          - hint: 'Original link: /portfolio, key: 1c58c9f9'
+            label: Link
+            name: 1c58c9f9
+            widget: string
+          - hint: 'Original link: /, key: 2f'
+            label: Link
+            name: 2f
+            widget: string
+          - hint: 'Original link: /over-mij, key: 58082f04'
+            label: Link
+            name: 58082f04
+            widget: string
+          - hint: 'Original link: /contact, key: 4b0e6111'
+            label: Link
+            name: 4b0e6111
+            widget: string
+          - hint: >-
+              Original link:
+              https://www.facebook.com/profile.php?id=100083377494430, key:
+              3d9f5db5
+            label: Link
+            name: 3d9f5db5
+            widget: string
+          - hint: >-
+              Original link:
+              https://www.linkedin.com/in/geertina-van-dijk-79775b105?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABqhR6MBtecxB-ae3kxjeYMfk2oEKn9N0WE&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bz5WCmJeuQ7OM9Y%2BArsoMxg%3D%3D,
+              key: -14050fe
+            label: Link
+            name: '-14050fe'
+            widget: string
+          - hint: >-
+              Original link: https://www.instagram.com/wavesadvertising/, key:
+              -57fc80ab
+            label: Link
+            name: '-57fc80ab'
+            widget: string
+          - hint: 'Original link: #about, key: 413ec14a'
+            label: Link
+            name: 413ec14a
+            widget: string
+          - hint: >-
+              Original link: https://alt2.nl/masterscriptie_succes/, key:
+              -1c4da2fc
+            label: Link
+            name: '-1c4da2fc'
+            widget: string
+          - hint: 'Original link: #Over-mij, key: 68ad5f18'
+            label: Link
+            name: 68ad5f18
+            widget: string
+      - label: Images
+        name: images
+        file: cms/_data/images.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Images
+          - label: Image
+            name: i1c722d33
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 534a8dbd
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 2121d00a
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 23ae0fce
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '5e14695'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 33f41f5a
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: c2bcb8
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5d5a3275
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i1f888e0e
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i136b3bd3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i327fe45e
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i1ccf828f
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: if21be7
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 15fe9ef6
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 24b1b420
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5418dd34
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 2ac0df44
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 4abef31c
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2b1beb3c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-ab5cd4e'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-a372cef'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 2d1c12d2
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 663c825b
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4b79f48f'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7c2d7763
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 550be0d5
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 3eaa53f5
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7742d9a5
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-478f6494'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 17daa6ab
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 6e3c8c52
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-3419a4d8'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-e7662bd'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-48d3b687'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5d53d8e9
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-5d7136dc'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 65192a1d
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-432a875f'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+publish_mode: editorial_workflow
