@@ -184,17 +184,9 @@ collections:
             label: Text
             name: '-64104400'
             widget: string
-          - hint: 'Original text: Business without, key: 3478e088'
+          - hint: 'Original text: Waves, key: 4f7dc7a'
             label: Text
-            name: '3478e088'
-            widget: string
-          - hint: 'Original text: advertising is like, key: -5230b42f'
-            label: Text
-            name: '-5230b42f'
-            widget: string
-          - hint: 'Original text: winking at someone in the dark, key: 656fbe12'
-            label: Text
-            name: 656fbe12
+            name: 4f7dc7a
             widget: string
           - hint: "Original text: / SOCIAL\_MEDIA\_MARKETING\_AGENCY, key: 3ce6bf9d"
             label: Text
