@@ -1062,6 +1062,16 @@ collections:
             label: Text
             name: 752a026b
             widget: string
+          - hint: 'Original text: Gelukt! Ik heb je gegevens ontvangen, key: 9cdfded'
+            label: Text
+            name: 9cdfded
+            widget: string
+          - hint: >-
+              Original text: Als je nog verdere vragen hebt, neem gerust contact
+              met me op!, key: -7c8a6fbf
+            label: Text
+            name: '-7c8a6fbf'
+            widget: string
           - hint: "Original text: WAVES\_Advertising, key: -33a33822"
             label: Text
             name: '-33a33822'
@@ -1128,16 +1138,6 @@ collections:
             label: Text
             name: '-2545c258'
             widget: text
-          - hint: 'Original text: Gelukt! Ik heb je gegevens ontvangen, key: 9cdfded'
-            label: Text
-            name: 9cdfded
-            widget: string
-          - hint: >-
-              Original text: Als je nog verdere vragen hebt, neem gerust contact
-              met me op!, key: -7c8a6fbf
-            label: Text
-            name: '-7c8a6fbf'
-            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json

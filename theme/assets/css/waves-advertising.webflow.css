@@ -8998,6 +8998,10 @@ h5 {
   .avatarkit-testimonials-grid-2 {
     grid-row-gap: 32px;
   }
+
+  .div-block-252 {
+    background-color: #f2f3f7;
+  }
 }
 
 @media screen and (max-width: 991px) {
