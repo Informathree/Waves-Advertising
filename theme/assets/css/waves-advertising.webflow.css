@@ -4344,11 +4344,10 @@ h5 {
   -ms-flex-align: center;
   align-items: center;
   background-color: #44939b;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 147, 155, 0.6)), to(rgba(68, 147, 155, 0.6))), var(--image-i1ccf828f);
-  background-image: linear-gradient(180deg, rgba(68, 147, 155, 0.6), rgba(68, 147, 155, 0.6)), var(--image-i1ccf828f);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 147, 155, 0.6)), to(rgba(68, 147, 155, 0.6))), var(--image-5e14695);
+  background-image: linear-gradient(180deg, rgba(68, 147, 155, 0.6), rgba(68, 147, 155, 0.6)), var(--image-5e14695);
   background-position: 0px 0px, 0px 50%;
   background-size: auto, cover;
-  opacity: 1;
 }
 
 .title-page-top-copy {
