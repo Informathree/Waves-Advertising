@@ -9895,9 +9895,6 @@ h5 {
 
   .section-page-top-blog {
     padding-top: 20px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(null), to(null)), var(--image-15fe9ef6);
-    background-image: linear-gradient(180deg, null, null), var(--image-15fe9ef6);
-    background-position: 0px 0px, 50% 50%;
   }
 
   .title-page-top-copy {
@@ -11261,9 +11258,6 @@ h5 {
   .section-page-top-blog {
     padding-right: 15px;
     padding-left: 15px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(null), to(null)), var(--image-15fe9ef6);
-    background-image: linear-gradient(180deg, null, null), var(--image-15fe9ef6);
-    background-position: 0px 0px, 50% 50%;
   }
 
   .title-page-top-copy {

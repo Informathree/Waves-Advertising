@@ -417,146 +417,6 @@ collections:
             name: 556d64d8
             widget: string
           - hint: >-
-              Original text: Hieronder vind je top 3 advertenties van deze
-              maand!, key: 41e23097
-            label: Text
-            name: '41e23097'
-            widget: string
-          - hint: 'Original text: Windhoek Resort Bonaire, key: 39186e38'
-            label: Text
-            name: '39186e38'
-            widget: string
-          - hint: 'Original text: Eén van de advertenties die ik, key: 2c460fb6'
-            label: Text
-            name: 2c460fb6
-            widget: string
-          - hint: >-
-              Original text: heb mogen maken voor Windhoek Resort Bonaire., key:
-              38f9964d
-            label: Text
-            name: 38f9964d
-            widget: string
-          - hint: 'Original text: Dit wil ik ook!, key: -17bd9d43'
-            label: Text
-            name: '-17bd9d43'
-            widget: string
-          - hint: 'Original text: Real Sisters, key: 2e56ae4d'
-            label: Text
-            name: 2e56ae4d
-            widget: string
-          - hint: 'Original text: heb mogen maken voor Real Sisters., key: 57dbce8a'
-            label: Text
-            name: 57dbce8a
-            widget: string
-          - hint: 'Original text: GreenSales Balk, key: 775ca3f5'
-            label: Text
-            name: 775ca3f5
-            widget: string
-          - hint: >-
-              Original text: heb mogen maken voor GreenSales Balk., key:
-              -341a0d0
-            label: Text
-            name: '-341a0d0'
-            widget: string
-          - hint: 'Original text: Mijn klanten zijn blij, key: -1c0acb9'
-            label: Text
-            name: '-1c0acb9'
-            widget: string
-          - hint: 'Original text: En ik dus ook!, key: -7046b945'
-            label: Text
-            name: '-7046b945'
-            widget: string
-          - hint: >-
-              Original text: Maar je hoeft me niet op mijn blauwe ogen te
-              geloven...., key: -7e55b999
-            label: Text
-            name: '-7e55b999'
-            widget: string
-          - hint: 'Original text: KlasseStudent, key: -2f3a1c8a'
-            label: Text
-            name: '-2f3a1c8a'
-            widget: string
-          - hint: "Original text: \"Met Geertina aan boord hebben we ons bedrijf ook online weten te versterken. Ze weet onze vraag, onze stijl en de sfeer die we willen uitdragen erg goed om te zetten in pakkende content en opvallende advertenties. Haar aanstekelijke enthousiasme en vrolijkheid maakt iedere meeting een feestje. Geertina is het type dat altijd een stap extra zet voor ons als klant, actief meedenkt en met eigen creatieve oplossingen\_komt.\", key: -418d7109"
-            label: Text
-            name: '-418d7109'
-            widget: text
-          - hint: 'Original text: Antek Bosman, key: -62820739'
-            label: Text
-            name: '-62820739'
-            widget: string
-          - hint: 'Original text: GreenSales, key: 61f84fe9'
-            label: Text
-            name: 61f84fe9
-            widget: string
-          - hint: >-
-              Original text: "Omdat wij een frisse wind nodig hadden voor onze
-              social media kanalen, hebben wij Geertina van Waves Advertising
-              benaderd. , key: -209232dc
-            label: Text
-            name: '-209232dc'
-            widget: text
-          - hint: >-
-              Original text: Wij zijn erg blij dat we haar hebben gevraagd, ze
-              heeft enorm veel kennis! Ze heeft ons erg goed geholpen met
-              Facebook en Instagram Advertenties.", key: -23af5b14
-            label: Text
-            name: '-23af5b14'
-            widget: text
-          - hint: 'Original text: Boukje Katerberg, key: -8aa563f'
-            label: Text
-            name: '-8aa563f'
-            widget: string
-          - hint: >-
-              Original text: “Geertina van Waves Advertising heeft ons geholpen
-              om in twee weken tijd te laten zien wat voor resultaten wij kunnen
-              realiseren voor ons bedrijf, dit d.m.v. Social Media advertenties.
-              Wij zijn erg blij met deze succesvolle resultaten en het bereik
-              naar onze website. Verder een fijne communicatie, presentatie en
-              nazorg!”, key: -66fffd1f
-            label: Text
-            name: '-66fffd1f'
-            widget: text
-          - hint: "Original text: Antje &\_Akke Postma, key: -6f190508"
-            label: Text
-            name: '-6f190508'
-            widget: string
-          - hint: 'Original text: Social Media Marketing, key: 617cae17'
-            label: Text
-            name: 617cae17
-            widget: string
-          - hint: 'Original text: WAVES, key: 4e8d47a'
-            label: Text
-            name: 4e8d47a
-            widget: string
-          - hint: 'Original text: Het DNA van WAVES, key: 55f47feb'
-            label: Text
-            name: 55f47feb
-            widget: string
-          - hint: 'Original text: Overig, key: -7282aeee'
-            label: Text
-            name: '-7282aeee'
-            widget: string
-          - hint: "Original text: KVK:\_86008463, key: 4ef36b1d"
-            label: Text
-            name: 4ef36b1d
-            widget: string
-          - hint: "Original text: Locatie:\_, key: 30164b95"
-            label: Text
-            name: 30164b95
-            widget: string
-          - hint: 'Original text: 🌍, key: 1b0e51'
-            label: Text
-            name: 1b0e51
-            widget: string
-          - hint: 'Original text: Algemene Voorwaarden, key: -27bb6d32'
-            label: Text
-            name: '-27bb6d32'
-            widget: string
-          - hint: "Original text: Copyright WAVES\_advertising © Powered by Informathree, key: -95a331f"
-            label: Text
-            name: '-95a331f'
-            widget: string
-          - hint: >-
               Original text: Hulp nodig bij het promoten van je producten of
               diensten via Social Media advertenties? Dat is precies waar ik jou
               mee kan helpen!, key: 529d652a
@@ -731,6 +591,146 @@ collections:
             label: Text
             name: '-6731ba26'
             widget: text
+          - hint: 'Original text: Social Media Marketing, key: 617cae17'
+            label: Text
+            name: 617cae17
+            widget: string
+          - hint: 'Original text: WAVES, key: 4e8d47a'
+            label: Text
+            name: 4e8d47a
+            widget: string
+          - hint: 'Original text: Het DNA van WAVES, key: 55f47feb'
+            label: Text
+            name: 55f47feb
+            widget: string
+          - hint: 'Original text: Overig, key: -7282aeee'
+            label: Text
+            name: '-7282aeee'
+            widget: string
+          - hint: "Original text: KVK:\_86008463, key: 4ef36b1d"
+            label: Text
+            name: 4ef36b1d
+            widget: string
+          - hint: "Original text: Locatie:\_, key: 30164b95"
+            label: Text
+            name: 30164b95
+            widget: string
+          - hint: 'Original text: 🌍, key: 1b0e51'
+            label: Text
+            name: 1b0e51
+            widget: string
+          - hint: 'Original text: Algemene Voorwaarden, key: -27bb6d32'
+            label: Text
+            name: '-27bb6d32'
+            widget: string
+          - hint: "Original text: Copyright WAVES\_advertising © Powered by Informathree, key: -95a331f"
+            label: Text
+            name: '-95a331f'
+            widget: string
+          - hint: >-
+              Original text: Hieronder vind je top 3 advertenties van deze
+              maand!, key: 41e23097
+            label: Text
+            name: '41e23097'
+            widget: string
+          - hint: 'Original text: Windhoek Resort Bonaire, key: 39186e38'
+            label: Text
+            name: '39186e38'
+            widget: string
+          - hint: 'Original text: Eén van de advertenties die ik, key: 2c460fb6'
+            label: Text
+            name: 2c460fb6
+            widget: string
+          - hint: >-
+              Original text: heb mogen maken voor Windhoek Resort Bonaire., key:
+              38f9964d
+            label: Text
+            name: 38f9964d
+            widget: string
+          - hint: 'Original text: Dit wil ik ook!, key: -17bd9d43'
+            label: Text
+            name: '-17bd9d43'
+            widget: string
+          - hint: 'Original text: Real Sisters, key: 2e56ae4d'
+            label: Text
+            name: 2e56ae4d
+            widget: string
+          - hint: 'Original text: heb mogen maken voor Real Sisters., key: 57dbce8a'
+            label: Text
+            name: 57dbce8a
+            widget: string
+          - hint: 'Original text: GreenSales Balk, key: 775ca3f5'
+            label: Text
+            name: 775ca3f5
+            widget: string
+          - hint: >-
+              Original text: heb mogen maken voor GreenSales Balk., key:
+              -341a0d0
+            label: Text
+            name: '-341a0d0'
+            widget: string
+          - hint: 'Original text: Mijn klanten zijn blij, key: -1c0acb9'
+            label: Text
+            name: '-1c0acb9'
+            widget: string
+          - hint: 'Original text: En ik dus ook!, key: -7046b945'
+            label: Text
+            name: '-7046b945'
+            widget: string
+          - hint: >-
+              Original text: Maar je hoeft me niet op mijn blauwe ogen te
+              geloven...., key: -7e55b999
+            label: Text
+            name: '-7e55b999'
+            widget: string
+          - hint: 'Original text: KlasseStudent, key: -2f3a1c8a'
+            label: Text
+            name: '-2f3a1c8a'
+            widget: string
+          - hint: "Original text: \"Met Geertina aan boord hebben we ons bedrijf ook online weten te versterken. Ze weet onze vraag, onze stijl en de sfeer die we willen uitdragen erg goed om te zetten in pakkende content en opvallende advertenties. Haar aanstekelijke enthousiasme en vrolijkheid maakt iedere meeting een feestje. Geertina is het type dat altijd een stap extra zet voor ons als klant, actief meedenkt en met eigen creatieve oplossingen\_komt.\", key: -418d7109"
+            label: Text
+            name: '-418d7109'
+            widget: text
+          - hint: 'Original text: Antek Bosman, key: -62820739'
+            label: Text
+            name: '-62820739'
+            widget: string
+          - hint: 'Original text: GreenSales, key: 61f84fe9'
+            label: Text
+            name: 61f84fe9
+            widget: string
+          - hint: >-
+              Original text: "Omdat wij een frisse wind nodig hadden voor onze
+              social media kanalen, hebben wij Geertina van Waves Advertising
+              benaderd. , key: -209232dc
+            label: Text
+            name: '-209232dc'
+            widget: text
+          - hint: >-
+              Original text: Wij zijn erg blij dat we haar hebben gevraagd, ze
+              heeft enorm veel kennis! Ze heeft ons erg goed geholpen met
+              Facebook en Instagram Advertenties.", key: -23af5b14
+            label: Text
+            name: '-23af5b14'
+            widget: text
+          - hint: 'Original text: Boukje Katerberg, key: -8aa563f'
+            label: Text
+            name: '-8aa563f'
+            widget: string
+          - hint: >-
+              Original text: “Geertina van Waves Advertising heeft ons geholpen
+              om in twee weken tijd te laten zien wat voor resultaten wij kunnen
+              realiseren voor ons bedrijf, dit d.m.v. Social Media advertenties.
+              Wij zijn erg blij met deze succesvolle resultaten en het bereik
+              naar onze website. Verder een fijne communicatie, presentatie en
+              nazorg!”, key: -66fffd1f
+            label: Text
+            name: '-66fffd1f'
+            widget: text
+          - hint: "Original text: Antje &\_Akke Postma, key: -6f190508"
+            label: Text
+            name: '-6f190508'
+            widget: string
           - hint: >-
               Original text: Jouw business online boosten is mijn doel! Dit kan
               gaan om het vergroten van je naamsbekendheid, je verkoopcijfers
@@ -1198,6 +1198,20 @@ collections:
             label: Link
             name: 2f
             widget: string
+          - hint: >-
+              Original link: https://alt2.nl/masterscriptie_succes/, key:
+              -1c4da2fc
+            label: Link
+            name: '-1c4da2fc'
+            widget: string
+          - hint: 'Original link: #Facebook, key: 66d72c09'
+            label: Link
+            name: 66d72c09
+            widget: string
+          - hint: 'Original link: #Instagram, key: -20ca6131'
+            label: Link
+            name: '-20ca6131'
+            widget: string
           - hint: 'Original link: https://www.skyscanner.com/, key: 30b1ed9'
             label: Link
             name: 30b1ed9
@@ -1223,20 +1237,6 @@ collections:
           - hint: 'Original link: https://www.informathree.com/, key: 52449930'
             label: Link
             name: '52449930'
-            widget: string
-          - hint: >-
-              Original link: https://alt2.nl/masterscriptie_succes/, key:
-              -1c4da2fc
-            label: Link
-            name: '-1c4da2fc'
-            widget: string
-          - hint: 'Original link: #Facebook, key: 66d72c09'
-            label: Link
-            name: 66d72c09
-            widget: string
-          - hint: 'Original link: #Instagram, key: -20ca6131'
-            label: Link
-            name: '-20ca6131'
             widget: string
           - hint: >-
               Original link:
@@ -1423,19 +1423,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 15fe9ef6
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: 24b1b420
             widget: object
             fields:
@@ -1489,84 +1476,6 @@ collections:
                 required: false
           - label: Image
             name: '-2b1beb3c'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-441e8c96'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 45a75dc0
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-7e8e8192'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 5d53d8e9
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-48d3b687'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-5d7136dc'
             widget: object
             fields:
               - name: url
@@ -1645,6 +1554,84 @@ collections:
                 required: false
           - label: Image
             name: '-ab5cd4e'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-441e8c96'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 45a75dc0
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7e8e8192'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5d53d8e9
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-48d3b687'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-5d7136dc'
             widget: object
             fields:
               - name: url
