@@ -3,6 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -168,20 +169,6 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: Protected Page, key: -11d4bbff'
-            label: Text
-            name: '-11d4bbff'
-            widget: string
-          - hint: 'Original text: Password, key: 4c641ebb'
-            label: Text
-            name: 4c641ebb
-            widget: string
-          - hint: >-
-              Original text: Incorrect password. Please try again., key:
-              -f5c4b5f
-            label: Text
-            name: '-f5c4b5f'
-            widget: string
           - hint: 'Original text: Diensten, key: -3243028'
             label: Text
             name: '-3243028'
@@ -405,6 +392,20 @@ collections:
           - hint: 'Original text: Home, key: 2268ff'
             label: Text
             name: 2268ff
+            widget: string
+          - hint: 'Original text: Protected Page, key: -11d4bbff'
+            label: Text
+            name: '-11d4bbff'
+            widget: string
+          - hint: 'Original text: Password, key: 4c641ebb'
+            label: Text
+            name: 4c641ebb
+            widget: string
+          - hint: >-
+              Original text: Incorrect password. Please try again., key:
+              -f5c4b5f
+            label: Text
+            name: '-f5c4b5f'
             widget: string
           - hint: 'Original text: Page Not Found, key: -40b0787c'
             label: Text
@@ -659,15 +660,13 @@ collections:
             label: Text
             name: 57dbce8a
             widget: string
-          - hint: 'Original text: GreenSales Balk, key: 775ca3f5'
+          - hint: 'Original text: Flinke Events, key: -7239396c'
             label: Text
-            name: 775ca3f5
+            name: '-7239396c'
             widget: string
-          - hint: >-
-              Original text: heb mogen maken voor GreenSales Balk., key:
-              -341a0d0
+          - hint: 'Original text: heb mogen maken voor Flinke Events., key: -24b445cf'
             label: Text
-            name: '-341a0d0'
+            name: '-24b445cf'
             widget: string
           - hint: 'Original text: Mijn klanten zijn blij, key: -1c0acb9'
             label: Text
@@ -730,6 +729,98 @@ collections:
           - hint: "Original text: Antje &\_Akke Postma, key: -6f190508"
             label: Text
             name: '-6f190508'
+            widget: string
+          - hint: >-
+              Original text: Jouw business online boosten is mijn doel! Dit kan
+              gaan om het vergroten van je naamsbekendheid, je verkoopcijfers
+              verhogen tot aan het verkrijgen van meer leads. Denk hierbij ook
+              aan het vervullen van vacatures., key: -1613f8b1
+            label: Text
+            name: '-1613f8b1'
+            widget: text
+          - hint: 'Original text: Transparantie, key: -d1ed036'
+            label: Text
+            name: '-d1ed036'
+            widget: string
+          - hint: >-
+              Original text: Dat is wat ik belangrijk vind. Elke week krijg je
+              een overzichtelijke update hoe de campagne loopt en doe ik, in
+              overleg, optimalisaties indien nodig. Daarnaast krijg je aan het
+              eind van de maand een resultatenrapport waarin we de campagne
+              samen bespreken. We meten en analyseren de uitkomsten en stellen
+              de strategie bij indien nodig., key: 75245d82
+            label: Text
+            name: 75245d82
+            widget: text
+          - hint: >-
+              Original text: Instagram of Facebook gebruiken voor het bereiken
+              van jouw doelgroep? Dan ben je mij bij aan het juiste adres! Met
+              tal van succesvolle campagnes voor verschillende klanten weet ik
+              precies waar en hoe ik jouw (potentiële) doelgroep het beste kan
+              bereiken., key: -18b10e09
+            label: Text
+            name: '-18b10e09'
+            widget: text
+          - hint: 'Original text: Persoonlijk Contact, key: 7c6a3d16'
+            label: Text
+            name: 7c6a3d16
+            widget: string
+          - hint: >-
+              Original text: Persoonlijk contact staat bij mij voorop. Ik vind
+              het belangrijk om een wederzijdse goede klik te hebben met de
+              mensen waarmee ik werk. Daarom kies ik er voor om per kwartaal een
+              x aantal klanten tot de agency toe te laten. Kwaliteit boven
+              kwantiteit. Ik kies zorgvuldig mijn opdrachtgevers en klanten uit,
+              om zo samen nog beter te kunnen knallen., key: -7ab2a77d
+            label: Text
+            name: '-7ab2a77d'
+            widget: text
+          - hint: 'Original text: Let''s connect!, key: 7645ec10'
+            label: Text
+            name: 7645ec10
+            widget: string
+          - hint: "Original text: Het DNA\_van WAVES, key: 7aad0f6b"
+            label: Text
+            name: 7aad0f6b
+            widget: string
+          - hint: >-
+              Original text: Hi! Ik ben Geertina van Dijk, online marketing
+              specialist en eigenaar van WAVES Advertising. Opgegroeid in een
+              Fries ondernemersgezin in het dorp Harich, vlakbij Lemmer. In 2019
+              heb ik mijn Bachelor in Marketing en Sales Management succesvol
+              afgerond aan de Hanzehogeschool in Groningen. Na een aantal jaar
+              bij verschillende bedrijven in loondienst te hebben gewerkt en
+              ervaring op heb gedaan, wilde ik het graag anders doen. Mijn
+              ondernemershart begon te kloppen en zo is WAVES Advertising
+              ontstaan. Met WAVES kan ik al mijn passies perfect combineren;
+              online marketing, ondernemen en kitesurfen., key: -572d0dca
+            label: Text
+            name: '-572d0dca'
+            widget: text
+          - hint: >-
+              Original text: Wanneer ik op het water ben heb ik een gevoel van
+              vrijheid. Deze vrijheid geef ik ook terug aan mijn klanten. Zij
+              doen waar zij goed in zijn en ik doe waar ik goed in ben. Werk ik
+              dan alleen samen met watersport gerelateerde bedrijven? Zeker
+              niet, een klik daar draait het om., key: -7f1b46
+            label: Text
+            name: '-7f1b46'
+            widget: text
+          - hint: >-
+              Original text: De dynamische marketingwereld staat niet stil en
+              het is belangrijk om met de huidige trends en ontwikkelingen
+              (WAVES) mee te gaan. Welke pak je wel en welke laat je aan je
+              voorbij gaan? , key: 3b462fb4
+            label: Text
+            name: 3b462fb4
+            widget: text
+          - hint: "Original text: Let’s catch these WAVES\_together!, key: -6df74dac"
+            label: Text
+            name: '-6df74dac'
+            widget: string
+          - hint: 'Original text: Klinkt goed!, key: -6706eb97'
+            label: Text
+            name: '-6706eb97'
             widget: string
           - hint: 'Original text: Kopje koffie drinken?, key: -db73c7b'
             label: Text
@@ -970,98 +1061,6 @@ collections:
             label: Text
             name: 752a026b
             widget: string
-          - hint: >-
-              Original text: Jouw business online boosten is mijn doel! Dit kan
-              gaan om het vergroten van je naamsbekendheid, je verkoopcijfers
-              verhogen tot aan het verkrijgen van meer leads. Denk hierbij ook
-              aan het vervullen van vacatures., key: -1613f8b1
-            label: Text
-            name: '-1613f8b1'
-            widget: text
-          - hint: 'Original text: Transparantie, key: -d1ed036'
-            label: Text
-            name: '-d1ed036'
-            widget: string
-          - hint: >-
-              Original text: Dat is wat ik belangrijk vind. Elke week krijg je
-              een overzichtelijke update hoe de campagne loopt en doe ik, in
-              overleg, optimalisaties indien nodig. Daarnaast krijg je aan het
-              eind van de maand een resultatenrapport waarin we de campagne
-              samen bespreken. We meten en analyseren de uitkomsten en stellen
-              de strategie bij indien nodig., key: 75245d82
-            label: Text
-            name: 75245d82
-            widget: text
-          - hint: >-
-              Original text: Instagram of Facebook gebruiken voor het bereiken
-              van jouw doelgroep? Dan ben je mij bij aan het juiste adres! Met
-              tal van succesvolle campagnes voor verschillende klanten weet ik
-              precies waar en hoe ik jouw (potentiële) doelgroep het beste kan
-              bereiken., key: -18b10e09
-            label: Text
-            name: '-18b10e09'
-            widget: text
-          - hint: 'Original text: Persoonlijk Contact, key: 7c6a3d16'
-            label: Text
-            name: 7c6a3d16
-            widget: string
-          - hint: >-
-              Original text: Persoonlijk contact staat bij mij voorop. Ik vind
-              het belangrijk om een wederzijdse goede klik te hebben met de
-              mensen waarmee ik werk. Daarom kies ik er voor om per kwartaal een
-              x aantal klanten tot de agency toe te laten. Kwaliteit boven
-              kwantiteit. Ik kies zorgvuldig mijn opdrachtgevers en klanten uit,
-              om zo samen nog beter te kunnen knallen., key: -7ab2a77d
-            label: Text
-            name: '-7ab2a77d'
-            widget: text
-          - hint: 'Original text: Let''s connect!, key: 7645ec10'
-            label: Text
-            name: 7645ec10
-            widget: string
-          - hint: "Original text: Het DNA\_van WAVES, key: 7aad0f6b"
-            label: Text
-            name: 7aad0f6b
-            widget: string
-          - hint: >-
-              Original text: Hi! Ik ben Geertina van Dijk, online marketing
-              specialist en eigenaar van WAVES Advertising. Opgegroeid in een
-              Fries ondernemersgezin in het dorp Harich, vlakbij Lemmer. In 2019
-              heb ik mijn Bachelor in Marketing en Sales Management succesvol
-              afgerond aan de Hanzehogeschool in Groningen. Na een aantal jaar
-              bij verschillende bedrijven in loondienst te hebben gewerkt en
-              ervaring op heb gedaan, wilde ik het graag anders doen. Mijn
-              ondernemershart begon te kloppen en zo is WAVES Advertising
-              ontstaan. Met WAVES kan ik al mijn passies perfect combineren;
-              online marketing, ondernemen en kitesurfen., key: -572d0dca
-            label: Text
-            name: '-572d0dca'
-            widget: text
-          - hint: >-
-              Original text: Wanneer ik op het water ben heb ik een gevoel van
-              vrijheid. Deze vrijheid geef ik ook terug aan mijn klanten. Zij
-              doen waar zij goed in zijn en ik doe waar ik goed in ben. Werk ik
-              dan alleen samen met watersport gerelateerde bedrijven? Zeker
-              niet, een klik daar draait het om., key: -7f1b46
-            label: Text
-            name: '-7f1b46'
-            widget: text
-          - hint: >-
-              Original text: De dynamische marketingwereld staat niet stil en
-              het is belangrijk om met de huidige trends en ontwikkelingen
-              (WAVES) mee te gaan. Welke pak je wel en welke laat je aan je
-              voorbij gaan? , key: 3b462fb4
-            label: Text
-            name: 3b462fb4
-            widget: text
-          - hint: "Original text: Let’s catch these WAVES\_together!, key: -6df74dac"
-            label: Text
-            name: '-6df74dac'
-            widget: string
-          - hint: 'Original text: Klinkt goed!, key: -6706eb97'
-            label: Text
-            name: '-6706eb97'
-            widget: string
           - hint: "Original text: WAVES\_Advertising, key: -33a33822"
             label: Text
             name: '-33a33822'
@@ -1150,25 +1149,25 @@ collections:
             label: Link
             name: '23'
             widget: string
-          - hint: 'Original link: /diensten, key: 3191cce7'
+          - hint: 'Original link: /diensten/, key: a7d028'
             label: Link
-            name: 3191cce7
+            name: a7d028
             widget: string
-          - hint: 'Original link: /portfolio, key: 1c58c9f9'
+          - hint: 'Original link: /portfolio/, key: 6ec07556'
             label: Link
-            name: 1c58c9f9
+            name: 6ec07556
             widget: string
-          - hint: 'Original link: /old-home, key: 41a389f4'
+          - hint: 'Original link: /old-home/, key: -d324b45'
             label: Link
-            name: 41a389f4
+            name: '-d324b45'
             widget: string
-          - hint: 'Original link: /over-mij, key: 58082f04'
+          - hint: 'Original link: /over-mij/, key: -57024e55'
             label: Link
-            name: 58082f04
+            name: '-57024e55'
             widget: string
-          - hint: 'Original link: /contact, key: 4b0e6111'
+          - hint: 'Original link: /contact/, key: 16bdc13e'
             label: Link
-            name: 4b0e6111
+            name: 16bdc13e
             widget: string
           - hint: >-
               Original link:
@@ -1217,10 +1216,11 @@ collections:
             name: 30b1ed9
             widget: string
           - hint: >-
-              Original link: /assets/documents/algemene-voorwaarden-waves.pdf,
-              key: 5de0c6a6
+              Original link:
+              /assets/documents/algemene-voorwaarden-waves-2023.pdf, key:
+              7787634e
             label: Link
-            name: 5de0c6a6
+            name: 7787634e
             widget: string
           - hint: 'Original link: tel:+31613585865, key: -3c9b3c0d'
             label: Link
@@ -1429,19 +1429,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 4abef31c
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: 24b1b420
             widget: object
             fields:
@@ -1469,6 +1456,19 @@ collections:
                 required: false
           - label: Image
             name: 2ac0df44
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 4abef31c
             widget: object
             fields:
               - name: url
@@ -1572,7 +1572,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-441e8c96'
+            name: '-562e9236'
             widget: object
             fields:
               - name: url
@@ -1598,7 +1598,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-7e8e8192'
+            name: '-2de5dca6'
             widget: object
             fields:
               - name: url
@@ -1638,6 +1638,32 @@ collections:
                 required: false
           - label: Image
             name: '-5d7136dc'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-625f2091'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4f77551e'
             widget: object
             fields:
               - name: url
@@ -1807,32 +1833,6 @@ collections:
                 required: false
           - label: Image
             name: '-730bf629'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-625f2091'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-4f77551e'
             widget: object
             fields:
               - name: url
